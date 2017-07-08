@@ -1,0 +1,77 @@
+
+/* base styles */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f6f6f6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2 , h3, q {
+ font-family: 'Josefin Slab', serif;
+}
+
+
+/* Header */
+
+header {
+  background-image: url('img/bg.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  padding: 0 .3125em;
+  font-style: italic;
+}
+
+header h2 {
+  color: #fff;
+  margin: 0 auto 2em;
+}
+
+header a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #7bc3d1;
+  font-size: 1.4em;
+  padding:  .5em 1.75em;
+  color: #7bc3d1;
+}
+
+header a:hover,
+header a:focus {
+  background-color: rgba(123, 195, 209, .25);
+  color: #28343E;
+}
+
+
+/* Early Life */
+
+
+/* Young Adult */
+
+
+/* Later Life */
+
+/* Timeline */
+
+/* Footer */
+
