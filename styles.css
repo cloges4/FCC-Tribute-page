@@ -20,11 +20,32 @@ h1, h2 , h3, q {
  font-family: 'Josefin Slab', serif;
 }
 
+.early-life,
+.young-adult,
+.later-life {
+  margin: 0 auto;
+  padding: 0 1em;
+  line-height: 1.7em;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 1em;
+}
+
+/* quotes */
+
+aside{
+  background-color: rgba(176, 190, 199, .5);
+}
+
 
 /* Header */
 
 header {
-  background-image: url('img/bg.jpg');
+  background: url('img/bg.jpg') top right no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -39,6 +60,9 @@ h1 {
   text-align: center;
   padding: 0 .3125em;
   font-style: italic;
+}
+
+h1 q {
 }
 
 header h2 {
@@ -65,13 +89,25 @@ header a:focus {
 
 /* Early Life */
 
+.early-life {
+  background-color: #7bc3d1;
+  margin: 0 auto;
+  padding: 0 1em;
+}
 
 /* Young Adult */
 
 
 /* Later Life */
 
+.later-life {
+  background-color: #7bc3d1;
+}
+
 /* Timeline */
 
 /* Footer */
 
+footer {
+  background-color: #28343E;
+}
