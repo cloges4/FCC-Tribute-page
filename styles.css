@@ -14,7 +14,46 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
+
+h3 {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+hr {
+  height: 4px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background-color: #7bc3d1;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Setting flexbox */
+
+header,
+aside,
+footer {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Section styles */
 
 h1, h2 , h3, q {
  font-family: 'Josefin Slab', serif;
@@ -28,31 +67,27 @@ h1, h2 , h3, q {
   line-height: 1.7em;
 }
 
-h3 {
-  text-align: center;
-  margin-top: 0;
-  padding-top: 1em;
+.early-life p,
+.young-adult p,
+.later-life p {
+  margin: 2.5em auto 5em;
 }
 
-/* quotes */
+/* background image */
 
-aside{
-  background-color: rgba(176, 190, 199, .5);
+header,
+aside {
+  background: url('img/bg.jpg') top right no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 
 /* Header */
 
 header {
-  background: url('img/bg.jpg') top right no-repeat;
-  background-attachment: fixed;
   height: 100vh;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 h1 {
@@ -62,9 +97,6 @@ h1 {
   font-style: italic;
 }
 
-h1 q {
-}
-
 header h2 {
   color: #fff;
   margin: 0 auto 2em;
@@ -72,7 +104,6 @@ header h2 {
 
 header a {
   display: inline-block;
-  text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #7bc3d1;
   font-size: 1.4em;
@@ -86,28 +117,71 @@ header a:focus {
   color: #28343E;
 }
 
+/* quotes */
 
-/* Early Life */
-
-.early-life {
-  background-color: #7bc3d1;
-  margin: 0 auto;
-  padding: 0 1em;
+aside {
+  height: 45vh;
 }
 
-/* Young Adult */
+aside p{
+  font-size: 1.4em;
+  color: #fff;
+  text-align: center;
+  padding: 0 .3125em;
+  font-weight: 600;
 
-
-/* Later Life */
-
-.later-life {
-  background-color: #7bc3d1;
 }
 
-/* Timeline */
+/* Section specific */
 
-/* Footer */
+.early-life h3 {
+  padding-top: 1em;
+}
+
+
+/* footer */
 
 footer {
-  background-color: #28343E;
+  text-align: center;
+  height: 15vh;
 }
+
+footer p {
+  font-size: .9em;
+}
+
+footer a {
+  color: #7bc3d1;
+  font-size: 1.1em;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 640px) {
+
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  hr {
+    height: 5px;
+    width: 140px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .early-life p,
+  .young-adult p,
+  .later-life p,
+  aside p {
+    max-width: 768px;
+  }
+
+}
+
+
