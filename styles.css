@@ -44,12 +44,17 @@ a {
 
 header,
 aside,
-footer {
+footer,
+section {
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+section {
+  min-height: 75vh;
 }
 
 
@@ -59,18 +64,10 @@ h1, h2 , h3, q {
  font-family: 'Josefin Slab', serif;
 }
 
-.early-life,
-.young-adult,
-.later-life {
+section {
   margin: 0 auto;
   padding: 0 1em;
   line-height: 1.7em;
-}
-
-.early-life p,
-.young-adult p,
-.later-life p {
-  margin: 2.5em auto 5em;
 }
 
 /* background image */
@@ -120,7 +117,7 @@ header a:focus {
 /* quotes */
 
 aside {
-  height: 45vh;
+  min-height: 45vh;
 }
 
 aside p{
@@ -132,18 +129,12 @@ aside p{
 
 }
 
-/* Section specific */
-
-.early-life h3 {
-  padding-top: 1em;
-}
-
 
 /* footer */
 
 footer {
   text-align: center;
-  height: 15vh;
+  min-height: 15vh;
 }
 
 footer p {
