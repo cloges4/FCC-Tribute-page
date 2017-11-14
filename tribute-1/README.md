@@ -1,5 +1,7 @@
 # Les-Brown-Tribute
-This is the Tribute page project for <a href="https://codepen.io/cloges4/full/OgBdGJ" target="_blank">Live Demo </a><a href="https://codepen.io/cloges4/pen/OgBdGJ" target="_blank">With Source Code</a>
+This is the Tribute page project
+- <a href="https://codepen.io/cloges4/full/OgBdGJ" target="_blank">Live Demo </a> 
+- <a href="https://codepen.io/cloges4/pen/OgBdGJ" target="_blank">With Source Code</a>
 
 ## Requirements
 The requirements for this project where:
