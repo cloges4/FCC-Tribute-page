@@ -16,4 +16,3 @@ By working through a series hands on coding exercises and project students learn
 ### Les-Brown-Tribute
 - [Project details](https://github.com/cloges4/Free-Code-Camp/blob/master/tribute-1/README.md)
 - [Live Demo](https://codepen.io/cloges4/full/OgBdGJ)
-- [With Source Code](https://codepen.io/cloges4/pen/OgBdGJ)
