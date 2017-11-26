@@ -3,6 +3,10 @@
 * {
     box-sizing: border-box;
   }
+.thoughts,
+blockquote {
+    max-width: 75%;
+}
 
 img {
     max-width: 100%;
@@ -23,12 +27,36 @@ article {
   align-items: center;
 }
 
-
+/* header */
 
 header {
-  background: url('img/Steve_Jobs-min.JPG') top right no-repeat;
-  /* background-attachment: fixed; */
+  background:  linear-gradient(
+    rgba(174, 167, 167, 0.2),
+    rgba(174, 167, 167, 0.2)
+  ),url('img/Steve_Jobs-min.JPG') top right no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
+/* main content */
+
+/* timeline */
+
+aside, p {
+    max-width: 65%;
+}
+
+/* blockquote */
+
+.quote {
+    background: linear-gradient(
+        rgba(174, 167, 167, 0.2),
+        rgba(174, 167, 167, 0.2)
+      ),url('img/bitten_apple-min.jpg') top right no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+  }
+
+  /* footer */
