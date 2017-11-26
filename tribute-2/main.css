@@ -7,9 +7,13 @@
 
   body {
     font-family: 'Playfair Display', serif;
-    background-color: #fafafa;
-    color: #37474f;
+    color: #3B413C;
   }
+header,
+.info,
+footer {
+    background-color: #9DB5B2;
+}
 
 h1,
 h2,
@@ -17,14 +21,29 @@ h3 {
     font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+    margin-top: 35px;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-p {
+p,
+blockquote {
     line-height: 1.5;
-    padding: 5%;
+    padding: 0 5%;
+    margin-top: 0;
+}
+
+a {
+ text-decoration: none;
+ color: #fafafa;
+}
+
+a:hover {
+    color: #3B413C;
 }
 
 /* Setting flexbox */
@@ -40,32 +59,69 @@ article {
   align-items: center;
 }
 
+
+
 /* header */
+
+h1 {
+    font-size: 3em;
+}
 
 header img {
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
+
+/* thought */
+
+
 
 /* iframe */
 
+.info {
+    padding-top: 35px;
+}
 
 
 /* timeline */
+.timeline {
+    padding-bottom: 35px;
+}
 
+.timeline aside:hover {
+    background-color: #DAF0EE;
+}
 
 
 /* blockquote */
 
 .quote {
     background: linear-gradient(
-        rgba(174, 167, 167, 0.2),
-        rgba(174, 167, 167, 0.2)
+        rgba(66, 65, 65, 0.8),
+        rgba(66, 65, 65, 0.6)
       ),url('img/bitten_apple-min.jpg') top right no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 50vh;
+    height: 75vh;
   }
 
+blockquote {
+    color: #fafafa;
+   padding: 0;
+   font-size: 1.1em
+}
+
   /* footer */
+
+footer {
+    padding-top: 35px;
+    height: 35vh;
+    }
+
+footer p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
