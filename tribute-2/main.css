@@ -7,6 +7,8 @@
 
   body {
     font-family: 'Playfair Display', serif;
+    background-color: #fafafa;
+    color: #37474f;
   }
 
 h1,
@@ -39,7 +41,6 @@ article {
 }
 
 /* header */
-
 
 header img {
     display: block;
