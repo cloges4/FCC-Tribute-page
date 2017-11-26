@@ -1,0 +1,34 @@
+/* base styles */
+
+* {
+    box-sizing: border-box;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Setting flexbox */
+
+header,
+aside,
+footer,
+section,
+article {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+header {
+  background: url('img/Steve_Jobs-min.JPG') top right no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
