@@ -1,171 +1,140 @@
 /* base styles */
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-
 body {
-  font-family: "Playfair Display", serif;
-  color: #3b413c;
-  background-color: #9db5b2;
+	font-family: "Playfair Display", serif;
+	color: #3b413c;
+	background-color: #9db5b2;
 }
-
-h1,
-h2,
-h3 {
-  font-family: "Raleway", sans-serif;
+h1, h2, h3 {
+	font-family: "Raleway", sans-serif;
 }
-
 h2 {
-  margin: 2.5em 0 1.15em 0;
-  text-align: center;
-  font-size: 1.75em
+	margin: 2.5em 0 1.15em 0;
+	text-align: center;
+	font-size: 1.75em
 }
-
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
-
-p,
-blockquote {
-  line-height: 1.5;
-  padding: 0 5%;
-  margin-top: 0;
+p, blockquote {
+	line-height: 1.5;
+	padding: 0 5%;
+	margin-top: 0;
 }
-
 a {
-  text-decoration: none;
-  color: #fafafa;
+	text-decoration: none;
+	color: #fafafa;
 }
-
 a:hover {
-  color: #3b413c;
+	color: #3b413c;
 }
-
 /* Setting flexbox */
-header,
-aside,
-footer,
-section,
-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
+header, aside, footer, section, article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 /* header */
 
 h1 {
-  font-size: 3em;
+	font-size: 3em;
 }
-
 header img {
-  display: block;
-  margin: 0 auto;
+	display: block;
+	margin: 0 auto;
 }
-
 /* thought */
 
 .thought {
-  margin-bottom: 2em;
+	margin-bottom: 2em;
 }
-
 /* iframe */
-.iframe-container {
-  padding-left: 5%;
-  padding-right: 5%;
-}
 
+.iframe-container {
+	padding-left: 5%;
+	padding-right: 5%;
+}
 .video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
 }
 .video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
-
 /* timeline */
+
 .timeline {
-  padding: 2em 0;
+	padding: 2em 0;
 }
-
 .timeline-items aside:hover {
-  background-color: #daf0ee;
+	background-color: #daf0ee;
 }
-
 /* blockquote */
 
 .quote {
-  background: linear-gradient(rgba(66, 65, 65, 0.8), rgba(66, 65, 65, 0.6)),
-    url("img/bitten_apple-min.jpg") top right no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  height: 75vh;
+	background: linear-gradient(rgba(66, 65, 65, 0.8), rgba(66, 65, 65, 0.6)), url("img/bitten_apple-min.jpg") top right no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 75vh;
 }
-
 blockquote {
-  color: #fafafa;
-  padding: 0;
-  font-size: 1.1em;
+	color: #fafafa;
+	padding: 0;
+	font-size: 1.1em;
 }
-
 /* footer */
 
 footer {
-  padding-top: 2em;
-  height: 35vh;
+	padding-top: 2em;
+	height: 35vh;
 }
-
 footer p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-
 /* media queries */
+
 @media screen and (min-width: 768px) {
-  .about {
-    display: inline-block;
-  }
-
-  .about p {
-    max-width: 50%;
-    float: left;
-  }
-
-  .about img {
-    float: right;
-    margin-right: 5%;
-  }
+	.about {
+		display: inline-block;
+	}
+	.about p {
+		max-width: 50%;
+		float: left;
+	}
+	.about img {
+		float: right;
+		margin-right: 5%;
+	}
 }
 @media screen and (min-width: 935px) {
-
-  .about p {
-    max-width: 60%;
-  }
-  h2 {
-    font-size: 2em;
-  }
-
-
-  article p {
-      max-width: 75%;
-  }
-
-blockquote {
-    font-size: 1.5em;
-    font-style: italic;
-    line-height: 2;
-}
-
+	.about p {
+		max-width: 60%;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	article p {
+		max-width: 75%;
+	}
+	blockquote {
+		font-size: 1.5em;
+		font-style: italic;
+		line-height: 2;
+	}
 }
