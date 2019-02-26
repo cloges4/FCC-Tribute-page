@@ -1,13 +1,14 @@
-
 /* base styles */
-
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0.2rem;
+  font-family: "Raleway", sans-serif;
   background-color: #f6f6f6;
 }
 
@@ -46,7 +47,6 @@ header,
 aside,
 footer,
 section {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,11 +57,13 @@ section {
   min-height: 75vh;
 }
 
-
 /* Section styles */
 
-h1, h2 , h3, q {
- font-family: 'Josefin Slab', serif;
+h1,
+h2,
+h3,
+q {
+  font-family: "Josefin Slab", serif;
 }
 
 section {
@@ -74,12 +76,11 @@ section {
 
 header,
 aside {
-  background: url('img/bg.jpg') top right no-repeat;
+  background: url("img/bg.jpg") top right no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
-
 
 /* Header */
 
@@ -90,7 +91,7 @@ header {
 h1 {
   color: #fff;
   text-align: center;
-  padding: 0 .3125em;
+  padding: 0 0.3125em;
   font-style: italic;
 }
 
@@ -104,14 +105,14 @@ header a {
   text-transform: uppercase;
   border: 2px solid #7bc3d1;
   font-size: 1.4em;
-  padding:  .5em 1.75em;
+  padding: 0.5em 1.75em;
   color: #7bc3d1;
 }
 
 header a:hover,
 header a:focus {
-  background-color: rgba(123, 195, 209, .25);
-  color: #28343E;
+  background-color: rgba(123, 195, 209, 0.25);
+  color: #28343e;
 }
 
 /* quotes */
@@ -120,15 +121,13 @@ aside {
   min-height: 45vh;
 }
 
-aside p{
+aside p {
   font-size: 1.4em;
   color: #fff;
   text-align: center;
-  padding: 0 .3125em;
+  padding: 0 0.3125em;
   font-weight: 600;
-
 }
-
 
 /* footer */
 
@@ -138,7 +137,7 @@ footer {
 }
 
 footer p {
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 footer a {
@@ -146,13 +145,9 @@ footer a {
   font-size: 1.1em;
 }
 
-
-
 /* Media Queries */
 
 @media screen and (min-width: 640px) {
-
-
   h3 {
     font-size: 2.5em;
   }
@@ -175,7 +170,4 @@ footer a {
   footer {
     min-height: 25vh;
   }
-
 }
-
-
